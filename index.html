@@ -576,18 +576,27 @@
             .principle-item {
                 flex-direction: column;
                 align-items: flex-start;
-                padding: 16px;
+                padding: 20px;
+                margin-bottom: 16px;
+                cursor: default;
+                transform: none !important;
+            }
+            
+            .principle-item:hover {
+                transform: none !important;
             }
             
             .principle-tooltip {
-                position: static;
-                opacity: 1;
-                transform: none;
-                visibility: visible;
+                position: static !important;
+                opacity: 1 !important;
+                transform: none !important;
+                visibility: visible !important;
+                pointer-events: auto !important;
                 margin-top: 12px;
                 width: 100%;
                 font-size: 0.8125rem;
                 padding: 12px;
+                transition: none !important;
             }
             
             .principle-tooltip::after {
