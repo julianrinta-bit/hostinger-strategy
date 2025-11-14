@@ -577,13 +577,20 @@
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 20px;
-                margin-bottom: 16px;
+                margin-bottom: 20px;
                 cursor: default;
                 transform: none !important;
+                min-height: auto;
             }
             
             .principle-item:hover {
                 transform: none !important;
+            }
+            
+            .principle-item span:not(.principle-check) {
+                display: block;
+                width: 100%;
+                margin-bottom: 8px;
             }
             
             .principle-tooltip {
@@ -594,9 +601,12 @@
                 pointer-events: auto !important;
                 margin-top: 12px;
                 width: 100%;
+                max-width: 100%;
                 font-size: 0.8125rem;
-                padding: 12px;
+                padding: 14px;
+                box-sizing: border-box;
                 transition: none !important;
+                display: block;
             }
             
             .principle-tooltip::after {
@@ -1972,7 +1982,7 @@
             <div style="margin-top: 60px;">
                 <h3 class="footer-title">Julian Rinta</h3>
                 <div class="footer-contact">
-                    <a href="/cdn-cgi/l/email-protection#e48e91888d858a968d8a9085a48389858d88ca878b89"><span class="__cf_email__" data-cfemail="1d776871747c736f7473697c5d7a707c7471337e7270">[email&#160;protected]</span></a><br>
+                    <a href="mailto:julianrinta@gmail.com">julianrinta@gmail.com</a><br>
                     WhatsApp: +49 1522 5135264<br>
                     Mobile: +57 319 501 9765<br>
                     <a href="https://linkedin.com/in/julianrinta" target="_bl
