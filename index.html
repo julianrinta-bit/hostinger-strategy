@@ -573,14 +573,21 @@
         
         /* Mobile: Show tooltips always */
         @media (max-width: 768px) {
+            .principle-item {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+            }
+            
             .principle-tooltip {
                 position: static;
                 opacity: 1;
                 transform: none;
                 visibility: visible;
-                margin-top: 8px;
+                margin-top: 12px;
                 width: 100%;
                 font-size: 0.8125rem;
+                padding: 12px;
             }
             
             .principle-tooltip::after {
@@ -940,7 +947,10 @@
             /* Proven Methodology - centrar cohete arriba en móvil */
             .bento-item.full[style*="position: relative"] {
                 padding-right: 40px !important;
-                text-align: center;
+            }
+            
+            .bento-item.full[style*="position: relative"] > div {
+                max-width: 100% !important;
             }
             
             .bento-item.full[style*="position: relative"] .bento-icon {
@@ -949,6 +959,13 @@
                 display: block;
                 margin: 0 auto 24px auto;
                 font-size: 3rem !important;
+                text-align: center;
+            }
+            
+            .bento-item.full[style*="position: relative"] .bento-title,
+            .bento-item.full[style*="position: relative"] .bento-stat,
+            .bento-item.full[style*="position: relative"] .bento-description {
+                text-align: left !important;
             }
         }
         
@@ -1946,9 +1963,7 @@
             <div style="margin-top: 60px;">
                 <h3 class="footer-title">Julian Rinta</h3>
                 <div class="footer-contact">
-                    <a href="mailto:julianrinta@gmail.com">julianrinta@gmail.com</a><br>
+                    <a href="/cdn-cgi/l/email-protection#e48e91888d858a968d8a9085a48389858d88ca878b89"><span class="__cf_email__" data-cfemail="1d776871747c736f7473697c5d7a707c7471337e7270">[email&#160;protected]</span></a><br>
                     WhatsApp: +49 1522 5135264<br>
                     Mobile: +57 319 501 9765<br>
-                    <a href="https://linkedin.com/in/julianrinta" target="_blank">linkedin.com/in/julianrinta</a>
-                </div>
-                <p style="margin-top: 24px; font-size: 0.875rem; color: var(--t
+                    <a href="https://linkedin.com/in/julianrinta" target="_bl
